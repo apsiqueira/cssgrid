@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+* img {
+  display: flex;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 120px 300px 660px 1fr;
+  padding: 1rem;
+}
+body .menu {
+  display: grid;
+  grid-column: 2/6;
+  padding: 2rem;
+  background-color: blue;
+  margin-top: 1rem;
+}
+body .menu .ul-menu {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: end;
+}
+body .menu .ul-menu li {
+  background-color: blue;
+  border-radius: 1rem;
+}
+body .menu .ul-menu li a {
+  display: block;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+}
+body h1 {
+  font-size: 4rem;
+  line-height: 8rem;
+  letter-spacing: 2px;
+  grid-column: 2/6;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+body h1::after, body h1::before {
+  content: "";
+  background-color: white;
+  display: inline-block;
+  height: 1rem;
+  width: 4rem;
+}
+body h1::after {
+  margin-left: 2rem;
+}
+body h1::before {
+  margin-right: 2rem;
+}
+body .main-container {
+  grid-column: 2/5;
+  display: flex;
+  gap: 2rem;
+}
+body .main-container .container-img {
+  height: 50rem;
+  max-height: 50rem;
+  overflow-y: scroll;
+}
+body .main-container .container-description h2 {
+  font-size: 3rem;
+  background-color: darkgray;
+  color: black;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+}
+body .main-container .container-description h2::before {
+  content: "";
+  background-color: white;
+  display: inline-block;
+  height: 0.5rem;
+  width: 4rem;
+  margin-right: 1rem;
+}
+body .main-container .container-description .title-animales {
+  font-size: 3rem;
+  display: block;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+}
+body .main-container .container-description p {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.titulo-faq {
+  grid-column: 1/6;
+  font-size: 4rem;
+  line-height: 8rem;
+  letter-spacing: 2px;
+  grid-column: 2/6;
+  text-transform: uppercase;
+  height: 20rem;
+  background-color: rgba(250, 250, 250, 0.1);
+  text-align: end;
+}
+
+.container-faq {
+  grid-column: 2/5;
+  text-transform: uppercase;
+}
+.container-faq ul li h3 {
+  font-size: 3rem;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+}
+.container-faq ul li p {
+  font-size: 2rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+.titulo-contato {
+  grid-column: 1/6;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 8rem;
+  letter-spacing: 2px;
+  grid-column: 1/5;
+  text-transform: uppercase;
+  height: 20rem;
+  background-color: rgba(250, 250, 250, 0.1);
+}
+
+.container-map {
+  grid-column: 2/5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.container-map img {
+  height: 90rem;
+  width: 100rem;
+  max-width: 100%;
+}
+.container-map ul li {
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+  display: flex;
+}
+.container-map ul li::before {
+  content: "";
+  height: 0.5rem;
+  width: 2rem;
+  display: inline;
+  background-color: #fafafa;
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  grid-column: 2/6;
+  background-color: blue;
+}
+footer h4 {
+  padding: 40px;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=_style.css.map */

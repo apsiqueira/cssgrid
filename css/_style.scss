@@ -1,0 +1,246 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              
+
+  
+
+  img{
+    display: flex;
+    width: 100%;
+
+  }
+
+  
+ 
+
+}
+html {
+  //tornando a relaçao rem e px para 1:10
+  font-size: 62.5%;
+
+}
+body{
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr  120px  300px 660px 1fr;
+  padding: 1rem;
+  .menu{
+    display: grid;
+    grid-column: 2/6;
+    padding: 2rem;
+    background-color: blue;
+    margin-top: 1rem;
+        .ul-menu{
+          display: flex;
+          column-gap: 2rem;
+          align-items: center;
+          justify-content: end;
+
+          
+          li{
+            background-color: blue;
+            border-radius: 1rem;
+
+            a{
+              display: block;
+              padding: 2rem 3rem;
+              font-size: 2rem;
+           
+            }
+          
+          }
+          
+
+
+    }
+
+  }
+  h1{
+    font-size: 4rem;
+    line-height: 8rem;
+    letter-spacing: 2px;
+    grid-column: 2/6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+   
+    &::after, &::before {
+      content:"";
+      background-color: white;
+      display: inline-block;
+      height: 1rem;
+      width: 4rem;
+  
+    }
+    &::after  {
+      margin-left: 2rem;
+ 
+  
+    }
+     &::before {
+      margin-right: 2rem;
+
+
+  
+    }
+  }
+  .main-container{
+    grid-column: 2/5;
+    display: flex;
+    gap: 2rem;
+    .container-img{
+          height: 50rem;
+      max-height: 50rem;
+      overflow-y:scroll ;
+      // .animais-lista::-webkit-scrollbar-thumb {
+      //   background: #FB5;
+      //   border-left: 4px solid #faf6ed;
+      //   border-right: 4px solid #faf6ed;
+      // }
+      
+    }
+    .container-description{
+   
+  
+      h2{
+        font-size: 3rem;
+      background-color: darkgray;
+      color: black;
+      padding: 1rem;
+      letter-spacing: 0.1rem;
+      &::before{
+        content:"";
+        background-color: white;
+        display: inline-block;
+        height: 0.5rem;
+        width: 4rem;
+        margin-right: 1rem;
+
+      }
+
+      }
+      .title-animales{
+        font-size: 3rem;
+        display: block;
+        letter-spacing: 0.1rem;
+        margin: 1rem 0;
+      
+
+      }
+      p{
+       
+        font-size: 2rem;
+        margin: 1rem 0;
+      }
+
+
+
+    }
+  
+   
+  }
+
+
+}
+.titulo-faq{
+  grid-column: 1/6;
+  font-size: 4rem;
+  line-height: 8rem;
+  letter-spacing: 2px;
+  grid-column: 2/6;
+  text-transform: uppercase;
+  height: 20rem;
+  background-color: rgba($color: #fafafa, $alpha: 0.1);
+  text-align: end;
+
+
+
+}
+.container-faq{
+
+  grid-column: 2/5;
+  text-transform: uppercase;
+  ul{
+    li{
+      h3{
+        font-size: 3rem;
+        padding: 1rem;
+        letter-spacing: 0.1rem;
+  
+      }
+      p{
+        font-size: 2rem;
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+      
+      
+    
+      }
+  
+    }
+   
+
+  }
+
+
+}
+.titulo-contato{
+  grid-column: 1/6;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 8rem;
+  letter-spacing: 2px;
+  grid-column: 1/5;
+  text-transform: uppercase;
+  height: 20rem;
+  background-color: rgba($color: #fafafa, $alpha: 0.1);
+}
+.container-map{
+  grid-column: 2/5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  img{
+
+    height: 90rem;
+    width: 100rem;
+    max-width: 100%;
+  }
+  ul{
+    li{
+      font-size: 2rem;
+      width: 100%;
+      margin-bottom: 2rem;
+      padding-left: 4rem;
+      display: flex;
+    
+     
+      &::before{
+        content: "";
+        height: 0.5rem;
+        width: 2rem;
+        display: inline;
+        background-color: #fafafa;
+        margin-top: 1.2rem;
+        margin-right: 1rem;
+      }
+
+    }
+  }
+}
+footer{
+  margin-top: 2rem;
+ grid-column: 2/6;
+ background-color: blue;
+ h4{
+  padding: 40px;
+  font-size: 2rem;
+ }
+}
